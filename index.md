@@ -1,37 +1,77 @@
-## Welcome to GitHub Pages
+<!DOCTYPE html>
+<html>
+    <head>
+       <meta charset='UTF-8'>
+       <meta name='viewport' content='width=device-width, initial-scale=1.0h'>
+       <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+       <link rel="stylesheet" type="text/css" href="style.css">
+       <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+       <title> Marcus.Tech</title>
+    </head>
 
-You can use the [editor on GitHub](https://github.com/marcusp97/marcus.github.io/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+    <body>
+         
+        <div class='img-wrap'>
+            <img src='images/la2.png' class='la2 translate' data-speed='0.6' alt=''>
+            <img src='images/la.png' class='la translate' data-speed='0.2' alt=''>
+        </div>
+        
+        <header>
+            <nav class='fade-in'>
+                <h1> I'm Marcus </h1>
+                <p> A Traveling Self-Taught Developer from Los Angeles </p>
+                <ul id='list'>
+                    <li class='li1'><a href='#div_id' class='cool-link'> Projects </a></li>
+                    <li class='li2'><a href='Resume.pdf' class='cool-link' download=""> Resume </a></li>
+                    <li class='li3'><a href="https://github.com/marcusp97" target="_blank" class='cool-link'> Github </a></li>
+                    <li class='li4'><a href='#id' class='cool-link'> Contact </a></li>
+                </ul>
+            </nav>      
+        </header>
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+        <section class='projects'>
+            <div class="shadow"></div>
 
-### Markdown
+            <div class="container">
+                <div id='div_id' class="content opacity">
+                    <h3 class="title">
+                        Projects
+                        <div class="border"></div>
+                    </h3>
+                    <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque officiis quos expedita ipsa, a quidem inventore voluptates debitis accusamus tenetur qui et voluptas dicta, culpa earum, doloribus odio consectetur consequuntur soluta quasi nobis! Deserunt voluptatum reiciendis iure expedita sequi quisquam laboriosam temporibus exercitationem.</p>
+                </div>
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+                <div class="imgContainer opacity">
+                    <img src="images/doggo.jpg" alt="">
+                </div>
+            </div>
+        </section>
 
-```markdown
-Syntax highlighted code block
+        <section class='contact'> 
+            <div id='id' class='contact-wrapper'>
+                <div>
+                    <h3 class='title2'> Contact 
+                        <div class='border2'></div>
+                    </h3>
+                    <p class='text2'> Feel free to send me an email with this contact form: </p>
+                </div>
 
-# Header 1
-## Header 2
-### Header 3
+                <form id="mail_form" action="mypost.php" method="POST">
+                    <div>
+                        <label for="subject">Subject:</label>
+                        <input type="text" name="subject" id="subject"/>
+                    </div>
+                    <div>
+                        <label for="message">Message:</label>
+                        <textarea name="message" id="message"></textarea>
+                    </div>
+                    <div>
+                        <input type="submit" name="submit" id="submit" value="Send"/>
+                    </div>
+                </form>
+            </div>
+        </section>
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/marcusp97/marcus.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+        <script src='app.js'> </script>
+    </body> 
+</html>
