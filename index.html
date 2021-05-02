@@ -35,7 +35,7 @@
             <div class="container">
                 <div id='div_id' class="content opacity">
                     <h3 class="title"> Projects </h3>
-                    <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque officiis quos expedita ipsa, a quidem inventore voluptates debitis accusamus tenetur qui et voluptas dicta, culpa earum, doloribus odio consectetur consequuntur soluta quasi nobis! Deserunt voluptatum reiciendis iure expedita sequi quisquam laboriosam temporibus exercitationem.</p>
+                    <p class="text">Here are five of my recent projects. I made them all using updated html, css, & javascript.     </p>
                 </div>
 
                 <div class="imgContainer">
@@ -81,14 +81,14 @@
 
                     <div class='another div'>
                         <div class='email-wrap'>
-                                <form class="contact-form" action="mypost.php" method="POST">
+                                <form class="contact-form" action="mypost.php" method="POST" data-netlify="true" netlify>
                                      
                                     <div class='name-div'>
                                          <label for="subject" id='name'> Name </label>
                                     </div>
                                         
                                     <div class='name-field-div'>
-                                        <input type="text" id='name-field' name="name"/>
+                                        <input type="text, hidden" id='name-field' name="form-name" value='contact'/>
                                         
 
                                     </div>
@@ -101,7 +101,7 @@
                                     </div>
         
                                     <div class='submit-div'>
-                                        <button type="submit" name="submit"> Submit </button>
+                                        <button type="submit" name="submit" class='submit'> Submit </button>
                                     </div>
         
                                 </form>
