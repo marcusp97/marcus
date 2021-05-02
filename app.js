@@ -1,7 +1,4 @@
-// start node.js server  code //
-
-
-//end server code //
+// scroll effect code //
 
 const translate = document.querySelectorAll('.translate');
 
@@ -14,27 +11,12 @@ window.addEventListener('scroll', () => {
     })
 } )
 
+// end of scroll effect code //
 
-const http = require('http');
-const port = 3000;
-const fs = require('fs');
 
-const server = http.createServer(function(req, res) {
-    res.writeHead(200, { 'Content-Type': 'text/html' })
-    fs.readFile('web.html', function(error, data) {
-        if (error) {
-            res.writeHead(404)
-            res.write('Error: File Not Found')
-        } else {
-            res.write(data)
-        }
-        res.end()
-    })
-})
-server.listen(port, function(error) {
-    if (error) {
-        console.log('Something Went Wrong', error)
-    } else {
-        console.log('server is listening on port' + port)
-    }
-})
+
+// code for *click effect email submit button //
+document.querySelector('submit');
+
+
+// end of code button//s
