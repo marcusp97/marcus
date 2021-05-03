@@ -16,7 +16,7 @@ window.addEventListener('scroll', () => {
 
 
 // code for *click effect email submit button //
-document.querySelector('submit');
+document.querySelector('form').submit();
 
 
 // end of code button//s
