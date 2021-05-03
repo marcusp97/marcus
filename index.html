@@ -81,28 +81,25 @@
 
                     <div class='another div'>
                         <div class='email-wrap'>
-                                <form class="contact-form" name='contact' action="" method="POST" data-netlify="true">
-                                    <input type="hidden" name="contact" value="contact"/>
-                                    
+                                <form name='contact' method="POST" netlify>
                                     <div class='name-div'>
-                                         <label for="subject" id='name'> Name </label>
+                                       <label for="subject" id='name'> Name </label>
                                     </div>
-                                        
+        
                                     <div class='name-field-div'>
-                                        <input type="text, hidden" id='name-field' name="form-name"/>
+                                       <input type="text, hidden" id='name-field' name="name"/>
                                     </div>
-        
-                                    <div class='message-div'>
-                                        <label for="message" id='message'> Message </label>
-                                        <!-- <input type='text' id='message-field' name='message'> -->
-                                        <textarea name="comment[body]" rows="1" cols="50" wrap="physical" id="message-field"></textarea>
 
+                                    <div class='message-div'>
+                                       <label for="message" id='message'> Message </label>
+                                  <!-- <input type='text' id='message-field' name='message'> -->
+                                       <textarea name="message" rows="1" cols="50" wrap="physical" id="message-field"></textarea>
                                     </div>
-        
+
                                     <div class='submit-div'>
-                                        <button type="submit" name="submit" class='submit' value='Submit'> Submit </button>
+                                       <button type="submit" name="submit" class='submit' value='Submit'> Submit </button>
                                     </div>
-        
+                                    <div netlify-recaptcha></div>
                                 </form>
                         </div>
                     </div>
