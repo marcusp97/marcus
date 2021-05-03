@@ -15,8 +15,19 @@ window.addEventListener('scroll', () => {
 
 
 
-// code for *click effect email submit button //
-document.querySelector('form').submit();
+// AJAX code for email submit button //
+document.querySelector("form").addEventListener("submit", handleSubmit);
 
+const handleSubmit = (e) => {
+  e.preventDefault()
+  let myForm = document.getElementById('pizzaOrder');
+  let formData = new FormData(myForm)
+  fetch('/', {
+    method: 'POST',
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    body: new URLSearchParams(formData).toString()
+  }).then(() => console.log('Form successfully submitted')).catch((error) =>
+    alert(error))
+}
 
-// end of code button//s
+// end of code button//
